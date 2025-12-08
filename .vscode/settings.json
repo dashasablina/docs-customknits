@@ -1,3 +1,40 @@
 {
-    "folder-color.pathColors": []
+    "folder-color.pathColors": [
+        {
+            "folderPath": "customknits_docs/docs/docs-structure/",
+            "color": "foldercolorizer.color_ff0066"
+        },
+        {
+            "folderPath": "customknits_docs/docs/knitting/delete/",
+            "color": "foldercolorizer.color_00cc99"
+        },
+        {
+            "folderPath": "customknits_docs/docs/knitting/gauge/",
+            "color": "foldercolorizer.color_00cc99"
+        },
+        {
+            "folderPath": "customknits_docs/docs/knitting/yarn/",
+            "color": "foldercolorizer.color_00cc99"
+        },
+        {
+            "folderPath": "customknits_docs/docs/knitting/graphics/",
+            "color": "foldercolorizer.color_00cc99"
+        },
+        {
+            "folderPath": "customknits_docs/docs/knitting/create/",
+            "color": "foldercolorizer.color_00cc99"
+        },
+        {
+            "folderPath": "customknits_docs/docs/knitting/stitches/",
+            "color": "foldercolorizer.color_00cc99"
+        },
+        {
+            "folderPath": "customknits_docs/docs/knitting/stitch-view/",
+            "color": "foldercolorizer.color_00cc99"
+        },
+        {
+            "folderPath": "customknits_docs/docs/knitting/display/",
+            "color": "foldercolorizer.color_00cc99"
+        }
+    ]
 }
