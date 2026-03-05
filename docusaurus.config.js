@@ -1,5 +1,4 @@
 // @ts-check
-
 import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
@@ -23,10 +22,9 @@ const config = {
     },
   },
 
-  // 👇 Добавляем английский язык, но сайт продолжает работать только на русском
   i18n: {
     defaultLocale: 'ru',
-    locales: ['ru', 'en'], // en появится позже, когда создашь /i18n/en
+    locales: ['ru', 'en'],
   },
 
   presets: [
@@ -35,8 +33,18 @@ const config = {
       {
         docs: {
           sidebarPath: './sidebars.js',
+
+          // ✅ ключевое: документация будет на https://docs.customknits.ru/...
+          routeBasePath: '/',
         },
-        blog: false,
+
+        // ✅ включаем блог и задаём красивый путь
+        blog: {
+          routeBasePath: '/blog',
+          showReadingTime: true,
+          // опционально: postsPerPage: 10,
+        },
+
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -56,12 +64,16 @@ const config = {
         src: 'img/logo2.png',
       },
       items: [
+        // ✅ ссылка на docs sidebar (теперь это "в корне")
         {
           type: 'docSidebar',
           sidebarId: 'docsSidebar',
           position: 'left',
           label: 'Документация',
         },
+
+        // ✅ ссылка на блог
+        { to: '/blog', label: 'Блог', position: 'left' },
       ],
     },
 
