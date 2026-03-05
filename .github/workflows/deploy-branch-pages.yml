@@ -1,4 +1,4 @@
-name: Deploy CustomKnits Docs to GitHub Pages
+name: Deploy Docs To gh-pages
 
 on:
   push:
@@ -7,14 +7,14 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: docs-deploy
+  group: docs-deploy-branch
   cancel-in-progress: true
 
 permissions:
-  contents: write   # <-- вот это нужно, чтобы можно было пушить в gh-pages
+  contents: write
 
 jobs:
-  build-and-deploy:
+  build-and-publish:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -25,18 +25,21 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
+          cache: "npm"
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Build website
+      - name: Build docs
         run: npm run build
 
-      - name: Deploy to GitHub Pages
+      - name: Ensure CNAME
+        run: echo "docs.customknits.ru" > build/CNAME
+
+      - name: Publish to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
           publish_branch: gh-pages
-          cname: docs.customknits.ru
