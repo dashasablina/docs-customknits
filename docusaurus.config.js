@@ -34,15 +34,7 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
 
-          // ✅ ключевое: документация будет на https://docs.customknits.ru/...
           routeBasePath: '/',
-        },
-
-        // ✅ включаем блог и задаём красивый путь
-        blog: {
-          routeBasePath: '/blog',
-          showReadingTime: true,
-          // опционально: postsPerPage: 10,
         },
 
         theme: {
@@ -64,16 +56,12 @@ const config = {
         src: 'img/logo2.png',
       },
       items: [
-        // ✅ ссылка на docs sidebar (теперь это "в корне")
         {
           type: 'docSidebar',
           sidebarId: 'docsSidebar',
           position: 'left',
           label: 'Документация',
         },
-
-        // ✅ ссылка на блог
-        { to: '/blog', label: 'Блог', position: 'left' },
       ],
     },
 
