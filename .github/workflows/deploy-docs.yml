@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
+
+concurrency:
+  group: docs-deploy
+  cancel-in-progress: true
 
 permissions:
   contents: write   # <-- вот это нужно, чтобы можно было пушить в gh-pages
