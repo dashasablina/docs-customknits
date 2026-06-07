@@ -77,3 +77,170 @@ article img {
   display: block;
   height: auto;
 }
+
+.doc-status-badge {
+  border: 2px solid;
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin: 0 0 18px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.08);
+}
+
+.doc-status-badge__top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.doc-status-badge__label,
+.doc-status-mini {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 54px;
+  border-radius: 999px;
+  padding: 3px 8px;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.doc-status-badge__title {
+  font-weight: 700;
+}
+
+.doc-status-badge__body {
+  font-size: 0.9rem;
+}
+
+.doc-status-badge__source {
+  margin-top: 6px;
+  font-size: 0.78rem;
+  opacity: 0.72;
+}
+
+.doc-status-badge--todo {
+  border-color: #f59e0b;
+  background: #fff7e6;
+}
+
+.doc-status-badge--todo .doc-status-badge__label,
+.doc-status-mini.doc-status-badge--todo {
+  background: #f59e0b;
+  color: #111;
+}
+
+.doc-status-badge--wip {
+  border-color: #2563eb;
+  background: #eef4ff;
+}
+
+.doc-status-badge--wip .doc-status-badge__label,
+.doc-status-mini.doc-status-badge--wip {
+  background: #2563eb;
+  color: #fff;
+}
+
+.doc-status-badge--done {
+  border-color: #16a34a;
+  background: #ecfdf3;
+}
+
+.doc-status-badge--done .doc-status-badge__label,
+.doc-status-mini.doc-status-badge--done {
+  background: #16a34a;
+  color: #fff;
+}
+
+.doc-status-badge--fix {
+  border-color: #dc2626;
+  background: #fff1f2;
+}
+
+.doc-status-badge--fix .doc-status-badge__label,
+.doc-status-mini.doc-status-badge--fix {
+  background: #dc2626;
+  color: #fff;
+}
+
+.doc-status-badge--legacy {
+  border-color: #6b7280;
+  background: #f3f4f6;
+}
+
+.doc-status-badge--legacy .doc-status-badge__label,
+.doc-status-mini.doc-status-badge--legacy {
+  background: #6b7280;
+  color: #fff;
+}
+
+[data-theme='dark'] .doc-status-badge--todo {
+  background: #3b2a0a;
+}
+
+[data-theme='dark'] .doc-status-badge--wip {
+  background: #14213d;
+}
+
+[data-theme='dark'] .doc-status-badge--done {
+  background: #12301d;
+}
+
+[data-theme='dark'] .doc-status-badge--fix {
+  background: #3a1115;
+}
+
+[data-theme='dark'] .doc-status-badge--legacy {
+  background: #262b33;
+}
+
+.docs-dev-progress__summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  margin: 20px 0 28px;
+}
+
+.docs-dev-progress__notice {
+  border-left: 4px solid #2563eb;
+  padding: 8px 12px;
+  background: #eef4ff;
+  border-radius: 0 6px 6px 0;
+}
+
+[data-theme='dark'] .docs-dev-progress__notice {
+  background: #14213d;
+}
+
+.docs-dev-progress__card {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 12px;
+  background: var(--ifm-background-surface-color);
+}
+
+.docs-dev-progress__count {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.docs-dev-progress__section {
+  margin-top: 28px;
+}
+
+.docs-dev-progress__table {
+  display: grid;
+  gap: 6px;
+}
+
+.docs-dev-progress__row {
+  display: grid;
+  grid-template-columns: 70px minmax(220px, 1fr) 140px 100px 120px;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  padding: 8px 0;
+  font-size: 0.9rem;
+}

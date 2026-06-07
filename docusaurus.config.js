@@ -1,5 +1,15 @@
 // @ts-check
+import path from 'path';
+import {fileURLToPath} from 'url';
 import { themes as prismThemes } from 'prism-react-renderer';
+import {
+  getProductionExcludedDocs,
+  shouldFilterDocsInProduction,
+} from './src/lib/docsPublication.mjs';
+
+const siteDir = path.dirname(fileURLToPath(import.meta.url));
+const filterDocsInProduction = shouldFilterDocsInProduction();
+const productionExcludedDocs = getProductionExcludedDocs(siteDir);
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -15,6 +25,15 @@ const config = {
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
+  headTags: [
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'yandex-verification',
+        content: '7770f4ffcb5bbaba',
+      },
+    },
+  ],
 
   markdown: {
     hooks: {
@@ -24,7 +43,7 @@ const config = {
 
   i18n: {
     defaultLocale: 'ru',
-    locales: ['ru', 'en'],
+    locales: ['ru'],
   },
 
   presets: [
@@ -33,8 +52,12 @@ const config = {
       {
         docs: {
           sidebarPath: './sidebars.js',
+          exclude: productionExcludedDocs,
 
           routeBasePath: '/',
+        },
+        pages: {
+          exclude: process.env.NODE_ENV === 'production' ? ['**/dev-progress.js'] : [],
         },
 
         theme: {
@@ -43,6 +66,8 @@ const config = {
       },
     ],
   ],
+
+  plugins: ['./src/plugins/docs-progress/index.js'],
 
   themeConfig: {
     colorMode: {
@@ -62,6 +87,15 @@ const config = {
           position: 'left',
           label: 'Документация',
         },
+        ...(process.env.NODE_ENV !== 'production'
+          ? [
+              {
+                to: '/dev-progress',
+                label: 'Dev progress',
+                position: 'right',
+              },
+            ]
+          : []),
       ],
     },
 

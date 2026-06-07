@@ -18,3 +18,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Internal docs workflow notes
+DOCS_IMPROVEMENT_PLAN.md
+DOCS_WORKFLOW.md
+
+# Local migration archive, not intended for the public repository
+docs/legacy/

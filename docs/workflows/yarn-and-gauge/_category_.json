@@ -1,0 +1,10 @@
+{
+  "label": "Пряжа и плотность",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Сценарии про пряжу, плотность и визуальные настройки пряжи."
+  },
+  "collapsible": true,
+  "collapsed": false
+}

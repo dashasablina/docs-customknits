@@ -1,0 +1,10 @@
+{
+  "label": "Перевод выкройки в схему вязания",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Сценарии про расчет схемы вязания по выкройке."
+  },
+  "collapsible": true,
+  "collapsed": false
+}

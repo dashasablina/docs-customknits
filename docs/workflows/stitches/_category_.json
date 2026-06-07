@@ -1,0 +1,10 @@
+{
+  "label": "Петли и схема вязания",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Сценарии про редактирование петель и работу со схемой вязания."
+  },
+  "collapsible": true,
+  "collapsed": false
+}
