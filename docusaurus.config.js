@@ -82,6 +82,12 @@ const config = {
           exclude: process.env.NODE_ENV === 'production' ? ['**/dev-progress.js'] : [],
         },
 
+        sitemap: {
+          lastmod: 'date',
+          changefreq: null,
+          priority: null,
+        },
+
         theme: {
           customCss: './src/css/custom.css',
         },
