@@ -17,8 +17,20 @@ last_reviewed: "2026-09-11"
 работа, сначала [сохраните проект](./save-project.md): создание нового проекта
 заменяет текущий.
 
+<img
+  src={require('/img/work-with-project/project-menu.png').default}
+  srcSet={require('/img/work-with-project/project-menu.png').default + " 2x"}
+  alt="Главное меню с командой Новый проект"
+/>
+
 В окне выбора можно начать с той части работы, которая уже понятна. Остальное
 добавляется в проект позже.
+
+<img
+  src={require('/img/work-with-project/new-project-options.png').default}
+  srcSet={require('/img/work-with-project/new-project-options.png').default + " 2x"}
+  alt="Окно выбора способа создания нового проекта"
+/>
 
 ## Выбрать начало работы
 

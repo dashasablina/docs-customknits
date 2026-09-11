@@ -20,17 +20,41 @@ last_reviewed: "2026-09-11"
 Нажмите **⋯** рядом с названием проекта в шапке и выберите
 **Переименовать**. Там же доступны **Заметки** и **Статистика**.
 
+<img
+  src={require('/img/work-with-project/project-actions-menu.png').default}
+  srcSet={require('/img/work-with-project/project-actions-menu.png').default + " 2x"}
+  alt="Меню у названия проекта с командами переименования, заметок и статистики"
+/>
+
 В заметках можно добавить описание всего проекта и отдельные короткие записи.
 Например, записать назначение вещи, что уже связано или что нужно проверить.
 Описание и заметки сохраняются вместе с проектом.
+
+<img
+  src={require('/img/work-with-project/project-notes.png').default}
+  srcSet={require('/img/work-with-project/project-notes.png').default + " 2x"}
+  alt="Окно заметок с описанием проекта"
+/>
 
 В списках слева находятся все выкройки и схемы вязания текущего проекта.
 Переключайтесь между ними по названию; название каждой выкройки или схемы
 можно изменить в её меню действий.
 
+<img
+  src={require('/img/work-with-project/project-items-list.png').default}
+  srcSet={require('/img/work-with-project/project-items-list.png').default + " 2x"}
+  alt="Списки выкроек и схем вязания в проекте"
+/>
+
 В разделе **Статистика** видно число выкроек и схем, расход пряжи и примерное
 время вязания. Здесь же можно указать количество каждой детали и свою скорость
 вязания, чтобы уточнить расчёт времени.
+
+<img
+  src={require('/img/work-with-project/project-statistics.png').default}
+  srcSet={require('/img/work-with-project/project-statistics.png').default + " 2x"}
+  alt="Статистика проекта с количеством деталей, расходом пряжи и временем вязания"
+/>
 
 Сохранённые проекты не объединяются в общий список в CustomKnits — каждый файл
 `.cknit` хранится у вас.
