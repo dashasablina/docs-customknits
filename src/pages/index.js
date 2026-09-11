@@ -13,11 +13,14 @@ export default function HomePage() {
         <p>Выберите раздел, чтобы начать работу с редактором.</p>
         <ul>
           <li>
-            <Link to="/concepts/">Из чего состоит редактор</Link>
+            <Link to="/start">Начать работу</Link>
+          </li>
+          <li>
+            <Link to="/pattern-work/draw-and-edit-pattern">Подготовить выкройку</Link>
           </li>
           <li>
             <Link to="/workflows/pattern-to-knitting/calculate-from-pattern">
-              Сценарии
+              Создать схему вязания по выкройке
             </Link>
           </li>
         </ul>
