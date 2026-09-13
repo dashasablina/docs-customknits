@@ -8,7 +8,7 @@ doc_type: "reference"
 product_area: "patterns"
 owner: "docs"
 status: "done"
-last_reviewed: "2026-09-11"
+last_reviewed: "2026-09-13"
 ---
 
 # Каталог шаблонов выкроек
@@ -16,6 +16,12 @@ last_reviewed: "2026-09-11"
 Готовый вариант создаёт одну или несколько выкроек по размерам готового
 изделия. Точные поля зависят от выбранной конструкции и показаны в форме
 создания; после создания любую деталь можно изменить вручную.
+
+<img
+  src={require('/img/pattern-work/pattern-creation-catalog.png').default}
+  srcSet={require('/img/pattern-work/pattern-creation-catalog.png').default + " 2x"}
+  alt="Каталог шаблонов изделий"
+/>
 
 ## Изделия
 

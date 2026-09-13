@@ -8,7 +8,7 @@ doc_type: "how-to"
 product_area: "patterns"
 owner: "docs"
 status: "done"
-last_reviewed: "2026-09-11"
+last_reviewed: "2026-09-13"
 ---
 
 # Нарисовать и изменить выкройку
@@ -22,6 +22,12 @@ last_reviewed: "2026-09-11"
 видны все выкройки проекта, но точки и линии редактируются только у выбранной
 выкройки.
 
+<img
+  src={require('/img/pattern-work/pattern-board-overview.png').default}
+  srcSet={require('/img/pattern-work/pattern-board-overview.png').default + " 2x"}
+  alt="Несколько выкроек на одном холсте; для редактирования выбрана передняя деталь"
+/>
+
 ## Выбрать инструмент
 
 На панели над холстом есть инструменты для разных действий.
@@ -33,6 +39,12 @@ last_reviewed: "2026-09-11"
 - **Редактировать выкройку** — инструмент редактирования точек и линий
   выбранной выкройки. В этом режиме выполняются все действия с точками и
   линиями ниже: построение контура, перемещение точек и изменение линий.
+
+<img
+  src={require('/img/pattern-work/pattern-move-tool-multiselect.png').default}
+  srcSet={require('/img/pattern-work/pattern-move-tool-multiselect.png').default + " 2x"}
+  alt="Инструмент перемещения и выделение нескольких выкроек рамкой"
+/>
 
 ## Построить контур
 
@@ -89,6 +101,12 @@ last_reviewed: "2026-09-11"
 Меняйте линию, когда форма уже близка к нужной: так проще контролировать
 размеры по подписям на холсте.
 
+<img
+  src={require('/img/pattern-work/pattern-segment-context-menu.png').default}
+  srcSet={require('/img/pattern-work/pattern-segment-context-menu.png').default + " 2x"}
+  alt="Контекстное меню линии с действиями разделить, изменить длину и превратить в кривую"
+/>
+
 ## Связать симметричные линии
 
 Чтобы править симметричные участки вместе, выделите две контурные линии одной
@@ -118,12 +136,45 @@ last_reviewed: "2026-09-11"
 накладываются друг на друга. Получается одна выкройка с внутренней линией в
 месте соединения.
 
+Сначала выделите стороны деталей, затем откройте контекстное меню. В окне
+соединения проверьте предпросмотр и выберите вариант совмещения.
+
+<img
+  src={require('/img/pattern-work/pattern-join-pieces-select-sides.png').default}
+  srcSet={require('/img/pattern-work/pattern-join-pieces-select-sides.png').default + " 2x"}
+  alt="Две выделенные стороны разных выкроек перед соединением"
+/>
+
+<img
+  src={require('/img/pattern-work/pattern-join-pieces-context-menu.png').default}
+  srcSet={require('/img/pattern-work/pattern-join-pieces-context-menu.png').default + " 2x"}
+  alt="Команда «Соединить детали по сторонам» в контекстном меню"
+/>
+
+<img
+  src={require('/img/pattern-work/pattern-join-pieces-preview.png').default}
+  srcSet={require('/img/pattern-work/pattern-join-pieces-preview.png').default + " 2x"}
+  alt="Окно соединения деталей с предпросмотром и выбором перемещаемой детали"
+/>
+
+<img
+  src={require('/img/pattern-work/pattern-join-pieces-result.png').default}
+  srcSet={require('/img/pattern-work/pattern-join-pieces-result.png').default + " 2x"}
+  alt="Две детали после объединения в одну выкройку"
+/>
+
 ## Настроить внешний вид выкроек
 
 В панели **Настройки отображения выкройки** можно выбрать, что показывать на
 холсте: сетку, длины и углы линий, информацию о линиях, внутренние линии,
 блоки и припуски. Там же настраиваются цвета линий и точек, а также заливка
 активной и неактивных выкроек.
+
+<img
+  src={require('/img/pattern-work/pattern-display-settings.png').default}
+  srcSet={require('/img/pattern-work/pattern-display-settings.png').default + " 2x"}
+  alt="Настройки отображения выкройки: сетка, привязка, подписи и блоки"
+/>
 
 Для расчёта схемы после работы с формой настройте вязальные свойства линий и
 блоки детали.

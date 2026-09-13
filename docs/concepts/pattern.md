@@ -8,7 +8,7 @@ doc_type: "concept"
 product_area: "patterns"
 owner: "docs"
 status: "done"
-last_reviewed: "2026-09-11"
+last_reviewed: "2026-09-13"
 ---
 
 # Выкройка
@@ -29,6 +29,12 @@ last_reviewed: "2026-09-11"
 деталей, и все они отображаются на одном холсте. Одна из них выбрана: именно
 её точки, линии и настройки редактируются. Чтобы переключиться на другую
 выкройку, нажмите на неё на холсте.
+
+<img
+  src={require('/img/pattern-work/pattern-board-overview.png').default}
+  srcSet={require('/img/pattern-work/pattern-board-overview.png').default + " 2x"}
+  alt="Доска выкроек: активная деталь выделена, а остальные остаются на том же холсте"
+/>
 
 Начните с нужного способа создания:
 

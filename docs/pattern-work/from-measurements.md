@@ -8,7 +8,7 @@ doc_type: "how-to"
 product_area: "patterns"
 owner: "docs"
 status: "done"
-last_reviewed: "2026-09-11"
+last_reviewed: "2026-09-13"
 ---
 
 # Создать выкройку по размерам готового изделия
@@ -25,6 +25,12 @@ last_reviewed: "2026-09-11"
 
 На доске **Выкройки** нажмите **+** в списке выкроек. В каталоге выберите
 категорию, затем конкретный вариант.
+
+<img
+  src={require('/img/pattern-work/pattern-creation-catalog.png').default}
+  srcSet={require('/img/pattern-work/pattern-creation-catalog.png').default + " 2x"}
+  alt="Каталог шаблонов изделий с категориями шапок, носков, шарфов, манишек, свитеров и деталей"
+/>
 
 Сейчас доступны:
 
@@ -43,11 +49,23 @@ last_reviewed: "2026-09-11"
 можно начать со стандартного размера: он заполняет исходные значения, после
 чего их можно изменить.
 
+<img
+  src={require('/img/pattern-work/pattern-template-measurements.png').default}
+  srcSet={require('/img/pattern-work/pattern-template-measurements.png').default + " 2x"}
+  alt="Форма размеров для создания выкройки рукава и её предварительный вид"
+/>
+
 Проверьте единицы измерения и обязательные поля. Если сочетание размеров не
 позволяет построить форму, редактор подскажет, какую величину нужно изменить.
 
 Нажмите **Создать детали**. В зависимости от варианта появится одна выкройка
 или набор деталей: например, перед, спинка, рукава и воротник. После создания
 они становятся обычными выкройками проекта — их можно менять на холсте.
+
+<img
+  src={require('/img/pattern-work/pattern-template-result.png').default}
+  srcSet={require('/img/pattern-work/pattern-template-result.png').default + " 2x"}
+  alt="Созданная по размерам выкройка рукава на доске выкроек"
+/>
 
 Полный список вариантов — в [каталоге шаблонов выкроек](./templates.md).
