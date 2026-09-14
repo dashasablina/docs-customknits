@@ -8,7 +8,7 @@ doc_type: "how-to"
 product_area: "patterns"
 owner: "docs"
 status: "done"
-last_reviewed: "2026-09-13"
+last_reviewed: "2026-09-14"
 ---
 
 # Нарисовать и изменить выкройку
@@ -113,14 +113,32 @@ last_reviewed: "2026-09-13"
 выкройки и в контекстном меню выберите **Связать линии**. Для выбора нескольких
 линий удерживайте <kbd>Ctrl</kbd> / <kbd>Cmd</kbd>.
 
+<img
+  src={require('/img/pattern-work/pattern-linked-lines-menu.png').default}
+  srcSet={require('/img/pattern-work/pattern-linked-lines-menu.png').default + " 2x"}
+  alt="Команда «Связать линии» для двух выбранных симметричных сторон выкройки"
+/>
+
 Действие доступно, если линии ещё не связаны и уже почти зеркально совпадают:
 их концы должны быть отражением друг друга с допуском до 0,08 см. Обе линии
 должны быть одного типа — прямыми или кривыми; у кривых также должна зеркально
 совпадать форма.
 
+<img
+  src={require('/img/pattern-work/pattern-linked-lines-connected.png').default}
+  srcSet={require('/img/pattern-work/pattern-linked-lines-connected.png').default + " 2x"}
+  alt="Связанные симметричные линии на выкройке"
+/>
+
 После этого изменение точек или формы одной линии отражается на второй. Это
 удобно, например, чтобы одновременно править оба скоса рукава или обе проймы.
 Связь можно убрать тем же контекстным меню.
+
+<img
+  src={require('/img/pattern-work/pattern-linked-lines-edit-result.png').default}
+  srcSet={require('/img/pattern-work/pattern-linked-lines-edit-result.png').default + " 2x"}
+  alt="Зеркальное изменение второй линии после редактирования первой"
+/>
 
 ## Соединить две выкройки
 

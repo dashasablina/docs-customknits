@@ -8,7 +8,7 @@ doc_type: "how-to"
 product_area: "patterns"
 owner: "docs"
 status: "done"
-last_reviewed: "2026-09-11"
+last_reviewed: "2026-09-14"
 ---
 
 # Настроить линии и блоки выкройки
@@ -23,9 +23,21 @@ last_reviewed: "2026-09-11"
 контурной линии и выберите **Задать ритм отрезка**. Укажите плотность, число
 петель и рядов в ритме, затем выберите точку, которую можно передвинуть.
 
+<img
+  src={require('/img/pattern-work/pattern-line-rhythm-menu.png').default}
+  srcSet={require('/img/pattern-work/pattern-line-rhythm-menu.png').default + " 2x"}
+  alt="Команда «Задать ритм отрезка» в контекстном меню прямой линии"
+/>
+
 Редактор показывает предварительное положение линии. После подтверждения её
 длина сохраняется, но одна из точек перемещается — поэтому форма выкройки
 меняется. Для кривой линии этот способ недоступен.
+
+<img
+  src={require('/img/pattern-work/pattern-line-rhythm-preview.png').default}
+  srcSet={require('/img/pattern-work/pattern-line-rhythm-preview.png').default + " 2x"}
+  alt="Окно задания ритма с выбором плотности, количества петель, рядов и перемещаемой точки"
+/>
 
 ## Выбрать способ формирования линии
 
@@ -36,12 +48,24 @@ last_reviewed: "2026-09-11"
 Это не добавляет петли вручную, а задаёт допустимые способы, которыми расчёт
 сможет сформировать край схемы.
 
+<img
+  src={require('/img/pattern-work/pattern-line-formation-settings.png').default}
+  srcSet={require('/img/pattern-work/pattern-line-formation-settings.png').default + " 2x"}
+  alt="Меню выбора допустимого способа формирования линии"
+/>
+
 ## Связать продолжение развёртки
 
 Выберите две контурные линии одной выкройки и в контекстном меню свяжите их
 как продолжение развёртки. Это доступно для линий почти одинаковой длины,
 которые ещё не связаны с другими линиями. Используйте связь, когда две стороны
 в развёртке должны рассчитываться как одно продолжение.
+
+<img
+  src={require('/img/pattern-work/pattern-technical-continuation.png').default}
+  srcSet={require('/img/pattern-work/pattern-technical-continuation.png').default + " 2x"}
+  alt="Команда «Связать как продолжение развёртки» для двух выбранных линий"
+/>
 
 ## Добавить внутреннюю линию или блок
 
@@ -54,3 +78,9 @@ last_reviewed: "2026-09-11"
 разделить её на области. При [расчёте схемы вязания](../workflows/pattern-to-knitting/calculate-from-pattern.md)
 для разных блоков можно задать отдельные параметры — например, разные узоры
 или цвета.
+
+<img
+  src={require('/img/pattern-work/pattern-internal-lines-and-blocks.png').default}
+  srcSet={require('/img/pattern-work/pattern-internal-lines-and-blocks.png').default + " 2x"}
+  alt="Инструменты редактирования блоков и области блоков внутри выкройки"
+/>
